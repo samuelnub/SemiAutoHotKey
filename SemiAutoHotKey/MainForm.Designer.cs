@@ -41,6 +41,9 @@
             this.ControlButton = new System.Windows.Forms.Button();
             this.InputTypeTabs = new System.Windows.Forms.TabControl();
             this.KeyCodeInputTab = new System.Windows.Forms.TabPage();
+            this.HardwareKeyCodeTabCombo = new System.Windows.Forms.ComboBox();
+            this.HardwareKeyCodeTabLabel = new System.Windows.Forms.Label();
+            this.HardwareKeyCodeTabCheck = new System.Windows.Forms.CheckBox();
             this.SplitKeyCodeTabCheck = new System.Windows.Forms.CheckBox();
             this.KeyCodeTabLabel = new System.Windows.Forms.Label();
             this.KeyCodeTabCombo = new System.Windows.Forms.ComboBox();
@@ -64,9 +67,6 @@
             this.DelayTabLabel = new System.Windows.Forms.Label();
             this.AddInputButton = new System.Windows.Forms.Button();
             this.TimelineList = new System.Windows.Forms.ListBox();
-            this.HardwareKeyCodeTabCheck = new System.Windows.Forms.CheckBox();
-            this.HardwareKeyCodeTabLabel = new System.Windows.Forms.Label();
-            this.HardwareKeyCodeTabCombo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.IntervalInput)).BeginInit();
             this.statusGroup.SuspendLayout();
             this.InputTypeTabs.SuspendLayout();
@@ -244,6 +244,35 @@
             this.KeyCodeInputTab.TabIndex = 0;
             this.KeyCodeInputTab.Text = "KeyCode";
             this.KeyCodeInputTab.UseVisualStyleBackColor = true;
+            // 
+            // HardwareKeyCodeTabCombo
+            // 
+            this.HardwareKeyCodeTabCombo.Enabled = false;
+            this.HardwareKeyCodeTabCombo.FormattingEnabled = true;
+            this.HardwareKeyCodeTabCombo.Location = new System.Drawing.Point(119, 73);
+            this.HardwareKeyCodeTabCombo.Name = "HardwareKeyCodeTabCombo";
+            this.HardwareKeyCodeTabCombo.Size = new System.Drawing.Size(121, 21);
+            this.HardwareKeyCodeTabCombo.TabIndex = 5;
+            // 
+            // HardwareKeyCodeTabLabel
+            // 
+            this.HardwareKeyCodeTabLabel.AutoSize = true;
+            this.HardwareKeyCodeTabLabel.Location = new System.Drawing.Point(4, 76);
+            this.HardwareKeyCodeTabLabel.Name = "HardwareKeyCodeTabLabel";
+            this.HardwareKeyCodeTabLabel.Size = new System.Drawing.Size(109, 13);
+            this.HardwareKeyCodeTabLabel.TabIndex = 4;
+            this.HardwareKeyCodeTabLabel.Text = "Hardware Scan Code";
+            // 
+            // HardwareKeyCodeTabCheck
+            // 
+            this.HardwareKeyCodeTabCheck.AutoSize = true;
+            this.HardwareKeyCodeTabCheck.Location = new System.Drawing.Point(7, 56);
+            this.HardwareKeyCodeTabCheck.Name = "HardwareKeyCodeTabCheck";
+            this.HardwareKeyCodeTabCheck.Size = new System.Drawing.Size(158, 17);
+            this.HardwareKeyCodeTabCheck.TabIndex = 3;
+            this.HardwareKeyCodeTabCheck.Text = "Use Hardware Input instead";
+            this.HardwareKeyCodeTabCheck.UseVisualStyleBackColor = true;
+            this.HardwareKeyCodeTabCheck.CheckedChanged += new System.EventHandler(this.HardwareKeyCodeTabCheck_CheckedChanged);
             // 
             // SplitKeyCodeTabCheck
             // 
@@ -520,35 +549,6 @@
             this.TimelineList.Name = "TimelineList";
             this.TimelineList.Size = new System.Drawing.Size(260, 95);
             this.TimelineList.TabIndex = 17;
-            // 
-            // HardwareKeyCodeTabCheck
-            // 
-            this.HardwareKeyCodeTabCheck.AutoSize = true;
-            this.HardwareKeyCodeTabCheck.Location = new System.Drawing.Point(7, 56);
-            this.HardwareKeyCodeTabCheck.Name = "HardwareKeyCodeTabCheck";
-            this.HardwareKeyCodeTabCheck.Size = new System.Drawing.Size(234, 17);
-            this.HardwareKeyCodeTabCheck.TabIndex = 3;
-            this.HardwareKeyCodeTabCheck.Text = "Hardware input (add two to toggle keypress)";
-            this.HardwareKeyCodeTabCheck.UseVisualStyleBackColor = true;
-            this.HardwareKeyCodeTabCheck.CheckedChanged += new System.EventHandler(this.HardwareKeyCodeTabCheck_CheckedChanged);
-            // 
-            // HardwareKeyCodeTabLabel
-            // 
-            this.HardwareKeyCodeTabLabel.AutoSize = true;
-            this.HardwareKeyCodeTabLabel.Location = new System.Drawing.Point(4, 76);
-            this.HardwareKeyCodeTabLabel.Name = "HardwareKeyCodeTabLabel";
-            this.HardwareKeyCodeTabLabel.Size = new System.Drawing.Size(109, 13);
-            this.HardwareKeyCodeTabLabel.TabIndex = 4;
-            this.HardwareKeyCodeTabLabel.Text = "Hardware Scan Code";
-            // 
-            // HardwareKeyCodeTabCombo
-            // 
-            this.HardwareKeyCodeTabCombo.Enabled = false;
-            this.HardwareKeyCodeTabCombo.FormattingEnabled = true;
-            this.HardwareKeyCodeTabCombo.Location = new System.Drawing.Point(119, 73);
-            this.HardwareKeyCodeTabCombo.Name = "HardwareKeyCodeTabCombo";
-            this.HardwareKeyCodeTabCombo.Size = new System.Drawing.Size(121, 21);
-            this.HardwareKeyCodeTabCombo.TabIndex = 5;
             // 
             // MainForm
             // 
